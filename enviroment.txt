@@ -1,0 +1,7 @@
+conda activate openAI
+
+conda install python
+conda install pylab
+
+pip install openai
+pip install pydub
