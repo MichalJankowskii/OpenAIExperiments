@@ -17,3 +17,6 @@ class OpenAIService:
     
     def createModeration(self, text):
         return openai.Moderation.create(input=text)
+    
+    def createImage(self, description):
+        return openai.Image.create(prompt=description, n=4, size="1024x1024")
