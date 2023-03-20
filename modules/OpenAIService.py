@@ -14,3 +14,6 @@ class OpenAIService:
     
     def createChatCompletion(self, role, content):
         return openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": role, "content": content}])
+    
+    def createModeration(self, text):
+        return openai.Moderation.create(input=text)
